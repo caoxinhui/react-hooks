@@ -78,6 +78,7 @@ export const useI18n = (obj, I18nContext) => {
 	// let locale = useContext(I18nContext) || 'en'
 	let locale = useContext(I18nContext) || 'cn'
 	// useContext(I18nContext)的值影响最终文字的显示
+	// 需要传递一个值确定是中文还是因为显示。让locale有一个固定的值，否则会报错
 	let target = obj.i18n[locale.toUpperCase()]
 	return { ...obj, ...target }
 }
