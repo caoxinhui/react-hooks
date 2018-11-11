@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default class Card extends React.Component {
-	state = {
+	static state = {
 		windowWidth: window.innerWidth,
 		x: 0,
 		y: 0,
