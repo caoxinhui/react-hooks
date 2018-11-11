@@ -8,11 +8,12 @@ import CustomHookCard from './CostomHook/Card'
 import { useToggle, useI18n, useHash } from './CostomHook/hooks'
 import ClassCard from './Class/Card'
 import HookCard from './Hook/Card'
+import Card from './CostomHook/Card';
 
 const Components = {
 	class: ClassCard,
-	hook: HookCard,
-	custom: CustomHookCard
+	// hook: HookCard,
+	// custom: CustomHookCard
 }
 
 const App = ({ data }) => {
@@ -40,5 +41,6 @@ const Local = ({ data, toggle }) => {
 }
 
 
-ReactDOM.render(<App data={data}/>, document.getElementById('root'));
+// ReactDOM.render(<App data={data}/>, document.getElementById('root'));
+ReactDOM.render(<ClassCard data={data}/>, document.getElementById('root'));
 serviceWorker.unregister();
