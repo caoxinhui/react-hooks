@@ -75,7 +75,9 @@ export const useDoducmentTitle = title => {
 
 export const useI18n = (obj, I18nContext) => {
 	if (!obj || !obj.i18n) return obj
-	let locale = useContext(I18nContext)
+	// let locale = useContext(I18nContext) || 'en'
+	let locale = useContext(I18nContext) || 'cn'
+	// useContext(I18nContext)的值影响最终文字的显示
 	let target = obj.i18n[locale.toUpperCase()]
 	return { ...obj, ...target }
 }
