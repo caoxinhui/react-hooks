@@ -1,9 +1,6 @@
 import React from 'react'
-import I18nContext from '../I18nContext'
 
 export default class Card extends React.Component {
-	static contextType = I18nContext
-
 	state = {
 		windowWidth: window.innerWidth,
 		x: 0,
@@ -118,7 +115,7 @@ const CardItem = ({ data, i18n, styles }) => {
 			/>
 			<img
 				className="card__img"
-				style={{ ...imageStyle, ...styles.image }}
+				style={{ ...styles.image }}
 				src={image}
 				alt={name}
 				title={name}
