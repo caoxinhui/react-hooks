@@ -71,7 +71,11 @@ export default class NewClass extends React.Component{
                     {
                         list.map(item => {
                             return (
-                                <CardItem key={item.name} data={item} i18n={this.context} styles={{ image: imageStyle,background: backgroundStyle}}/>
+                                <CardItem 
+                                    key={item.name} 
+                                    data={item} 
+                                    i18n={this.context} 
+                                    styles={{ image: imageStyle,background: backgroundStyle}}/>
                             )
                         })
                     }
