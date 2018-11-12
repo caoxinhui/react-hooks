@@ -92,6 +92,8 @@ export default class Card extends React.Component {
 				<span className="notice">
 					{tips}: {this.state.windowWidth}
 				</span>
+				<a class="twitter__link" target="_blank" href="https://twitter.com/intent/tweet?text=Check%20out%20this%203D%20CSS%20depth%20effect%20from%20@dazulu&via=CodePen%20&hashtags=codepen%2cfrontend&url=https://codepen.io/dazulu/details/VVZrQv/"><img
+            	class="twitter__icon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/twitter.svg" /> Share</a>
 			</React.Fragment>
 		)
 	}

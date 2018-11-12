@@ -43,9 +43,9 @@ const Local = ({ data, toggle }) => {
 }
 
 
-// ReactDOM.render(<App data={data}/>, document.getElementById('root'));
+ReactDOM.render(<App data={data}/>, document.getElementById('root'));
 // ReactDOM.render(<NewClass data={data}/>, document.getElementById('root'));//实现
-ReactDOM.render(<Card data={data}/>, document.getElementById('root'));
+// ReactDOM.render(<Card data={data}/>, document.getElementById('root'));//实现
 // ReactDOM.render(<NewHook data={data}/>, document.getElementById('root'));//实现
 // ReactDOM.render(<CustomHookCard data={data}/>, document.getElementById('root'));
 serviceWorker.unregister();
